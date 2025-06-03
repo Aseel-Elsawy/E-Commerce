@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home Glow</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="../base/header.css" />
+  <link rel="stylesheet" href="../base/footer.css" />
+  <link rel="stylesheet" href="productDetails.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/homepage.html">
+  <img id="logo" src="image/logo.png" alt="logo" style="height: 70px; width :70px;border: 0;" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mt-5 mb-5 mt-lg-0 mb-lg-0">
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="homepage.html">HOME</a>
+            </li>
+           
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+            </li>
+              <li class="nav-item mx-4">
+              <a class="nav-link" id="Contact" href="products.html">PRODUCTS</a>
+            </li>
+          </ul>
+          <a class="m-4" href="#"><i class="fa-solid fa-cart-shopping fa-xl icon"></i></a>
+          <a class="m-4" href="profile.html"><i class="fa-solid fa-user fa-xl icon"></i></a>
+          <a class="m-4" href="#"><i class="fa-solid fa-arrow-right-from-bracket fa-xl icon out"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="content">
+    <section class="container mt-4">
+      <div class="row align-items-center">
+        <!-- Product Image -->
+       <div class="col-12 col-md-6 col-lg-6 mb-4">
+  <img src="image/4.avif" alt="Elegant Perfume" class="img-fluid rounded mb-3" data-ProductId="123" style="height: 400px;width: 500px; object-fit: contain;">
+</div>
+
+
+       <!-- Product Details -->
+<div class="col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center mb-4 p-4">
+  <h1 class="mb-3 text-uppercase fs-5 fw-bold">Vase</h1>
+  <h5 class="text-dark mb-4">450 $</h5>
+
+  <!-- Product Description -->
+  <p class="product-description">
+    A sophisticated blend of oriental and floral notes, crafted to captivate the senses. 
+    Perfect for both daily wear and special occasions.
+  </p>
+
+  <div class="d-flex align-items-center mb-4">
+    <button id="decreaseBtn" class="btn btn-sm btn-outline-secondary me-2" type="button">-</button>
+    <input
+      id="quantityInput"
+      type="number"
+      readonly
+      value="1"
+      min="1"
+      max="10"
+      class="quantityInput form-control text-center border-0 rounded-3"
+      style="width: 60px;"
+    />
+    <button id="increaseBtn" class="btn btn-sm btn-outline-secondary ms-2" type="button">+</button>
+  </div>
+
+  <button
+    id="addToCartBtn"
+    class="btn btn-lg mt-4 w-50 rounded-pill shadow-lg addtocart btn-black"
+    data-ProductId="123"
+    type="button"
+  >
+    Add To Cart
+  </button>
+</div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <ul class="social-icon">
+      <li><a class="social-icon__link" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a class="social-icon__link" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+      <li><a class="social-icon__link" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a class="social-icon__link" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
+    <ul class="menu">
+      <li><a class="menu__link" href="homepage.html">Home</a></li>
+      <li><a class="menu__link" href="#">About</a></li>
+      <li><a class="menu__link" href="#">Services</a></li>
+      <li><a class="menu__link" href="#">Team</a></li>
+      <li><a class="menu__link" href="#">Contact</a></li>
+    </ul>
+    <p>&copy;2025 MAA | All Rights Reserved</p>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
